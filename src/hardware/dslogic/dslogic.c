@@ -530,8 +530,6 @@ static int open_device(struct sr_dev_inst *sdi, const struct sr_dev_driver* di) 
 }
 
 // NEW API
-//TODO: Remove
-static const char* config_path = "/home/diego/media/DSLogic/dslogic-gui/res/";
 
 SR_PRIV struct dev_context *dslogic_dev_new(void) {
     struct dev_context *devc;
@@ -636,10 +634,10 @@ SR_PRIV int dslogic_program_fpga(const struct sr_dev_inst* sdi){
         char filename[256];
         switch (devc->voltage_threshold) {
         case VOLTAGE_RANGE_18_33_V:
-            sprintf(filename, "%s%s", config_path, devc->profile->fpga_bit33);
+            sprintf(filename, "%s%s", FIRMWARE_DIR, devc->profile->fpga_bit33);
             break;
         case VOLTAGE_RANGE_5_V:
-            sprintf(filename, "%s%s", config_path, devc->profile->fpga_bit50);
+            sprintf(filename, "%s%s", FIRMWARE_DIR, devc->profile->fpga_bit50);
             break;
         default:
             sr_err("wrong voltage settings");

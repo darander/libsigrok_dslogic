@@ -152,9 +152,6 @@ static const uint64_t samplecounts[] = {
     SR_MB(4), SR_MB(8),	SR_MB(16),
 };
 
-//TODO: Remove
-const char* config_path = "/home/diego/media/DSLogic/dslogic-gui/res/";
-
 static int receive_data(int fd, int revents, void *cb_data) {
     //static int i = 0;
     struct timeval tv;
@@ -358,7 +355,7 @@ static GSList *scan(GSList *options) {
 			                                libusb_get_device_address(devlist[i]), NULL);
 		} else {
 			char filename[256];
-			sprintf(filename, "%s%s", config_path, prof->firmware);
+			sprintf(filename, "%s%s", FIRMWARE_DIR, prof->firmware);
 			const char *firmware = filename;
 			if (ezusb_upload_firmware(devlist[i], USB_CONFIGURATION,
 			                          firmware) == SR_OK)

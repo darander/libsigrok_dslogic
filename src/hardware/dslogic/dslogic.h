@@ -69,9 +69,9 @@ static const dslogic_profile supported_fx2[3] = {
 	 * DSLogic
 	 */
 	{0x2A0E, 0x0001, NULL, "DSLogic", NULL,
-		"DSLogic.fw",
-		"DSLogic33.bin",
-		"DSLogic50.bin",
+		"/DSLogic.fw",
+		"/DSLogic33.bin",
+		"/DSLogic50.bin",
 		DEV_CAPS_16BIT},
 
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0 }
