@@ -3,7 +3,7 @@
 *
 * Copyright (C) 2013 Bert Vermeulen <bert@biot.com>
 * Copyright (C) 2013 DreamSourceLab <dreamsourcelab@dreamsourcelab.com>
-* Copyright (C) 2025 Diego F. Asanza <d.asanza@gmail.com>
+* Copyright (C) 2015 Diego F. Asanza <d.asanza@gmail.com>
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
